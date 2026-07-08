@@ -8,7 +8,7 @@ if(x==0 && y==0){
   else if(x==0) {
     printf("Lies on y axis");}
     else {
-    printf("Lies on x axis");}
+    printf("Lies on 2D plane");}
 
 return 0;
 }

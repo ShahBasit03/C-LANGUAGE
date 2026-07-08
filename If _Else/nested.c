@@ -4,13 +4,13 @@ int main () {
    
   printf("Enter the first no.");
   scanf("%d",&a);
-   printf("Enter the first no.");
+   printf("Enter the second no.");
   scanf("%d",&b);
-   printf("Enter the first no.");
+   printf("Enter the third no.");
   scanf("%d",&c);
   if(a>b){
     if (a>c)
-    printf("%d ius greatest",a);
+    printf("%d is greatest",a);
     else
       printf("%d is greatest",c);
 

@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main  {
+int main()  {
    int n ;
    printf("Enter percentage");
    scanf("%d",&n);

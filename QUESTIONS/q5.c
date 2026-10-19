@@ -23,6 +23,8 @@ int main()
     swap(&x, &y);//gives adress of x and y to swap fn.
 
   printf("After swapping: x = %d, y = %d\n", x, y);
+  
 
     return 0;
 }
+

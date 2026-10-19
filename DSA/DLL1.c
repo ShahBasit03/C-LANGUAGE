@@ -39,6 +39,21 @@ Node* atbeg(Node*head,int n) {
 }
 
 //insert at the end:
+Node* atend(Node*head,int n) {
+  Node* newtail=(Node*)malloc(sizeof(Node));
+  Node* p=head;
+  while(p->next!=NULL){
+    p=p->next;
+  }
+
+  p->next=newtail;
+  newtail->prev=p;
+  newtail->next=NULL;
+  newtail->data=n;
+  return head;
+
+}
+
 
 
 
@@ -68,9 +83,15 @@ int main() {
   printf("Doubly linked list: ");
   show(head);
   printf("\n");
+  printf("insert at beginning:");
 
   head=atbeg(head,5);
   show(head);
+
+   printf("\n");
+   printf("insert at end:");
+   head=atend(head,7);
+   show(head);
 
   return 0;
 }
